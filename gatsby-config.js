@@ -1,12 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "🐬 이력서 - 이준호",
-    description: "개발자 이준호의 이력서입니다.",
-    author: "@juno",
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: '개발자:: 이준호 🐬',
+    description: '개발자 이준호의 이력서입니다.',
+    author: 'Lee Junho <dev.juno@gmail.com>',
   },
   plugins: [
-    "gatsby-plugin-postcss",
+    'gatsby-plugin-postcss',
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
