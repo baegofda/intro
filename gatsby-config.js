@@ -1,20 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: "🐬 이력서 - 이준호",
+    description: "개발자 이준호의 이력서입니다.",
+    author: "@juno",
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    "gatsby-plugin-postcss",
+    `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
+      // 사용할 파일을 gatsby 파일 시스템으로 가져오기위함
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
+    // graphql 안에서 이미지를 사용하기 위함
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
